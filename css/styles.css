@@ -424,8 +424,24 @@ a {
 }
 
 .about-image-container {
-  display: flex;
-  justify-content: center;
+  display: none; /* hidden on mobile, shown on desktop */
+}
+
+.about-image-mobile {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 320px;
+  width: 100%;
+}
+
+.about-image-mobile .about-portrait {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: var(--shadow-medium);
+  border: 1px solid var(--border-color);
+  aspect-ratio: 4 / 5;
 }
 
 .about-portrait {
@@ -952,6 +968,15 @@ a {
   .about-grid {
     grid-template-columns: 1.1fr 0.9fr;
     gap: 4rem;
+  }
+
+  .about-image-mobile {
+    display: none;
+  }
+
+  .about-image-container {
+    display: flex;
+    justify-content: center;
   }
   
   .about-portrait {
