@@ -1196,4 +1196,8 @@ a {
   body.footer-visible .back-to-top {
     bottom: 110px;
   }
+
+  #aboutPreview h2 {
+    text-align: center;
+  }
 }
