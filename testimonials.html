@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
+  <script>document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Client Reviews | Hair Salon Agulanna Aba</title>
@@ -76,16 +77,16 @@
     <!-- Testimonials Section -->
     <section class="section" id="testimonialsPage">
       <div class="container">
-        <div class="section-header text-center">
+        <div class="section-header text-center reveal">
           <h2>Client Reviews</h2>
           <p>We work hard to make sure you are happy. Read what some of our clients say about Mibest Beauty.</p>
         </div>
         
         <!-- Screenshot Testimonials Section -->
-        <h3 class="text-center" style="margin-bottom: 2.5rem; font-family: var(--font-serif);">Client Conversation Screenshots</h3>
+        <h3 class="text-center reveal" style="margin-bottom: 2.5rem; font-family: var(--font-serif);">Client Conversation Screenshots</h3>
         <div class="testimonials-grid" style="margin-bottom: 5rem;">
           <!-- Screenshot 1 -->
-          <div class="testimonial-screenshot-card">
+          <div class="testimonial-screenshot-card reveal-card">
             <div class="testimonial-screenshot-container">
               <!-- If screenshot file is provided, put it in src. Otherwise, show the styled fallback -->
               <img src="assets/images/testimonials/screenshot-1.jpg" alt="Screenshot review from a happy client of Mibest Beauty" class="gallery-img" style="display: none;" onerror="this.style.display='none'">
@@ -98,7 +99,7 @@
           </div>
 
           <!-- Screenshot 2 -->
-          <div class="testimonial-screenshot-card">
+          <div class="testimonial-screenshot-card reveal-card">
             <div class="testimonial-screenshot-container">
               <img src="assets/images/testimonials/screenshot-2.jpg" alt="Screenshot review of braids styling at Mibest Beauty" class="gallery-img" style="display: none;" onerror="this.style.display='none'">
               <div class="testimonial-screenshot-img-placeholder">
@@ -111,22 +112,22 @@
         </div>
 
         <!-- Text Testimonials / Placeholders Section -->
-        <h3 class="text-center" style="margin-bottom: 2.5rem; font-family: var(--font-serif);">More Client Feedback</h3>
+        <h3 class="text-center reveal" style="margin-bottom: 2.5rem; font-family: var(--font-serif);">More Client Feedback</h3>
         <div class="testimonials-grid">
           <!-- Text Testimonial 1 -->
-          <div class="testimonial-text-card">
+          <div class="testimonial-text-card reveal-card">
             <p class="testimonial-quote">"Client testimonial coming soon."</p>
             <span class="testimonial-client">Mibest Beauty Client</span>
           </div>
 
           <!-- Text Testimonial 2 -->
-          <div class="testimonial-text-card">
+          <div class="testimonial-text-card reveal-card">
             <p class="testimonial-quote">"Another happy client's review."</p>
             <span class="testimonial-client">Mibest Beauty Client</span>
           </div>
 
           <!-- Text Testimonial 3 -->
-          <div class="testimonial-text-card">
+          <div class="testimonial-text-card reveal-card">
             <p class="testimonial-quote">"Future customer feedback."</p>
             <span class="testimonial-client">Mibest Beauty Client</span>
           </div>
@@ -136,7 +137,7 @@
 
     <!-- Review Submission Callout -->
     <section class="section section-bg-alt" id="submitReview">
-      <div class="container text-center">
+      <div class="container text-center reveal">
         <h3>Have you visited us?</h3>
         <p style="max-width: 600px; margin: 0 auto 2rem;">If you have styled your hair or purchased a wig from Mibest Beauty, we would love to hear from you. Send us your feedback on WhatsApp or post on our Facebook page.</p>
         <div style="display: flex; gap: 1.5rem; justify-content: center;">
@@ -154,6 +155,7 @@
         <div class="footer-col footer-about">
           <h3>Mibest Beauty</h3>
           <p>A trusted hair salon in Agulanna, Aba. We make hair, sell human hair wigs, revamp wigs, and offer professional wig installations.</p>
+          <p style="margin-top: 1rem; color: #B4B7BA;"><strong>Email:</strong> [Email address to be provided]</p>
           <div class="footer-socials">
             <a href="https://www.facebook.com/share/1BmTVVYEfg/" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -173,14 +175,24 @@
             <li><a href="testimonials.html" class="footer-link">Client Reviews</a></li>
             <li><a href="faq.html" class="footer-link">FAQ</a></li>
             <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+            <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="disclaimer.html" class="footer-link">Disclaimer</a></li>
           </ul>
         </div>
         
         <div class="footer-col footer-hours">
           <h3>Salon Hours</h3>
-          <p><strong>Monday to Saturday:</strong> 8:00 AM to 6:00 PM</p>
-          <p><strong>Sunday:</strong> Closed</p>
-          <p style="margin-top: 1.5rem;"><strong>Location:</strong> Agulanna, Aba, Abia State, Nigeria</p>
+          <ul class="footer-hours-list" style="list-style: none; padding: 0; margin: 0; color: #B4B7BA; font-size: 0.95rem;">
+            <li style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.25rem;">
+              <span>Monday to Saturday</span>
+              <span>8:00 AM to 6:00 PM</span>
+            </li>
+            <li style="display: flex; justify-content: space-between; padding-bottom: 0.25rem;">
+              <span>Sunday</span>
+              <span style="color: var(--color-gold);">Closed</span>
+            </li>
+          </ul>
+          <p style="margin-top: 1.5rem; color: #B4B7BA;"><strong>Location:</strong> Agulanna, Aba, Abia State, Nigeria</p>
         </div>
       </div>
       
