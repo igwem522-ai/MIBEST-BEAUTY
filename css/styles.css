@@ -328,16 +328,7 @@ a {
 
 .section-header h2 {
   font-size: 2.25rem;
-  margin-bottom: 1rem;
-}
-
-.section-header h2::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 2px;
-  background-color: var(--color-gold);
-  margin: 0.75rem auto 0;
+  margin-bottom: 0.75rem;
 }
 
 .services-grid {
@@ -414,13 +405,13 @@ a {
 
 .about-quote {
   font-family: var(--font-serif);
-  font-size: 1.25rem;
-  line-height: 1.5;
+  font-size: 1.35rem;
+  line-height: 1.6;
   color: var(--color-gold-hover);
-  border-left: 3px solid var(--color-gold);
-  padding-left: 1.25rem;
-  margin: 1.5rem 0 2rem 0;
+  margin: 2rem 0;
   font-style: italic;
+  text-align: center;
+  padding: 0 1rem;
 }
 
 .about-image-container {
