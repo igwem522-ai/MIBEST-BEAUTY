@@ -129,8 +129,8 @@ a {
 
 .btn-primary:hover {
   background-color: var(--color-gold-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 20px rgba(197, 160, 89, 0.35);
 }
 
 .btn-secondary {
@@ -141,7 +141,9 @@ a {
 
 .btn-secondary:hover {
   background-color: var(--color-gold-light);
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.03);
+  border-color: var(--color-gold-hover);
+  box-shadow: 0 6px 20px rgba(197, 160, 89, 0.1);
 }
 
 /* Navigation Header */
@@ -544,6 +546,13 @@ a {
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow-subtle);
   text-align: center;
+  transition: var(--transition-smooth);
+}
+
+.testimonial-screenshot-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-medium);
+  border-color: var(--color-gold);
 }
 
 .testimonial-screenshot-container {
@@ -574,6 +583,13 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: var(--transition-smooth);
+}
+
+.testimonial-text-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-medium);
+  border-color: var(--color-gold);
 }
 
 .testimonial-quote {
