@@ -3,7 +3,7 @@
    Custom JS - Interactive UI Features
 */
 
-document.addEventListener('DOMContentLoaded', () => {
+function init() {
   // Mobile Navigation Toggle
   const menuToggle = document.getElementById('menuToggle');
   const navMenu = document.getElementById('navMenu');
@@ -50,4 +50,48 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-});
+
+  // Scroll Reveal Animations
+  const revealElements = document.querySelectorAll('.reveal, .reveal-image, .reveal-card');
+  
+  if (revealElements.length > 0) {
+    // Check if IntersectionObserver is supported
+    if ('IntersectionObserver' in window) {
+      // Add the reveal-ready class via JS so elements only hide if JS is active and observer will run
+      revealElements.forEach(element => {
+        element.classList.add('reveal-ready');
+      });
+
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.12 // trigger when 12% of the element is visible
+      };
+
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      revealElements.forEach(element => {
+        revealObserver.observe(element);
+      });
+    } else {
+      // Fallback: if browser doesn't support IntersectionObserver, keep elements visible
+      revealElements.forEach(element => {
+        element.classList.add('active');
+      });
+    }
+  }
+}
+
+// Bulletproof execution resolving DOMContentLoaded race conditions
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  init();
+}

@@ -1018,3 +1018,44 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* Progressive Enhancement Scroll Animations */
+.reveal.reveal-ready,
+.reveal-image.reveal-ready,
+.reveal-card.reveal-ready {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-image.reveal-ready {
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.reveal-card.reveal-ready {
+  transform: translateY(25px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Once active, reveal them */
+.reveal.reveal-ready.active,
+.reveal-image.reveal-ready.active,
+.reveal-card.reveal-ready.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Micro-interactions: Buttons active state and hover transition */
+.btn {
+  transition: transform 0.2s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.btn:active {
+  transform: scale(0.96) !important;
+}
+
+.nav-item {
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
