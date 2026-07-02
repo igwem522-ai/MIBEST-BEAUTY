@@ -106,6 +106,26 @@ function init() {
       });
     });
   }
+
+  // Footer visibility observer for floating buttons (mobile only shift)
+  const footer = document.querySelector('.site-footer');
+  if (footer) {
+    if ('IntersectionObserver' in window) {
+      const footerObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            document.body.classList.add('footer-visible');
+          } else {
+            document.body.classList.remove('footer-visible');
+          }
+        });
+      }, {
+        root: null,
+        threshold: 0.05
+      });
+      footerObserver.observe(footer);
+    }
+  }
 }
 
 // Bulletproof execution resolving DOMContentLoaded race conditions
