@@ -290,9 +290,24 @@ a {
 }
 
 .hero-image-container {
-  display: flex;
-  justify-content: center;
-  position: relative;
+  display: none; /* hidden on mobile, shown on desktop */
+}
+
+.hero-image-mobile {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 320px;
+  width: 100%;
+}
+
+.hero-image-mobile .hero-portrait {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: var(--shadow-medium);
+  border: 1px solid var(--border-color);
+  aspect-ratio: 4 / 5;
 }
 
 .hero-portrait {
@@ -916,6 +931,16 @@ a {
   .hero-actions {
     flex-direction: row;
     justify-content: flex-start;
+  }
+
+  .hero-image-mobile {
+    display: none;
+  }
+
+  .hero-image-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
   }
   
   /* Services 2-column or 3-column layout */
