@@ -355,18 +355,6 @@ a {
   border-color: var(--color-gold);
 }
 
-.service-icon {
-  width: 50px;
-  height: 50px;
-  background-color: var(--color-beige);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-  color: var(--color-gold);
-}
-
 .service-title {
   margin-bottom: 1rem;
   font-size: 1.35rem;
@@ -382,13 +370,13 @@ a {
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--color-gold);
-  border-bottom: 1px solid var(--color-gold);
-  padding-bottom: 2px;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .service-cta:hover {
   color: var(--color-gold-hover);
-  border-bottom-color: var(--color-gold-hover);
+  text-decoration: underline;
 }
 
 /* About Preview / Full Section */
