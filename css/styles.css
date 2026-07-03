@@ -560,7 +560,7 @@ a {
 }
 
 .testimonial-screenshot-container {
-  background-color: var(--white);
+  background-color: #121b22; /* WhatsApp dark mode chat bg to blend seamlessly */
   border-radius: 12px;
   height: 380px;
   display: flex;
@@ -575,8 +575,8 @@ a {
 .testimonial-screenshot-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: top center;
+  object-fit: contain; /* displays full screenshot on all screens without cropping */
+  object-position: center;
   transition: var(--transition-smooth);
 }
 
