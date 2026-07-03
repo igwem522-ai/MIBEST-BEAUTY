@@ -404,6 +404,10 @@ a {
   padding: 0 1rem;
 }
 
+.about-btn-container {
+  text-align: center;
+}
+
 .about-image-container {
   display: none; /* hidden on mobile, shown on desktop */
 }
