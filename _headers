@@ -1,0 +1,7 @@
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: no-referrer-when-downgrade
+  Permissions-Policy: geolocation=(), camera=(), microphone=(), interest-cohort=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://mibestbeauty.com.ng; connect-src 'self'; frame-src 'self';
