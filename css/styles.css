@@ -927,6 +927,23 @@ a {
   color: rgba(255, 255, 255, 0.15);
 }
 
+.footer-credit {
+  font-size: 0.85rem;
+}
+
+.footer-credit-link {
+  color: #8A8E93; /* Matches the color of other footer links */
+  text-decoration: underline;
+  text-decoration-color: rgba(138, 142, 147, 0.4); /* Muted underline */
+  transition: color 0.3s ease, text-decoration-color 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-credit-link:hover {
+  color: var(--color-gold); /* Gold color on hover for visual feedback */
+  text-decoration-color: var(--color-gold); /* Increased underline visibility */
+}
+
 /* Floating WhatsApp Button */
 .whatsapp-float {
   position: fixed;
